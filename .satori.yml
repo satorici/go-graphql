@@ -1,0 +1,12 @@
+tests:
+    hello:
+        assertStdoutEqual: "Hello World"
+        input:
+            - ""
+software:
+    go-graphql:
+        execute: ["go", "run", "go-graphql/examples/hello-world/main.go", "[[tests]]"]
+        #install: 
+            #- git clone https://github.com/graphql-go/graphql.git
+            #- cd openmct; ls -l; npm install; nohup npm start &
+            #- cat /root/.npm/_logs/*.log
