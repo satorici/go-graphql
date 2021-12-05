@@ -6,7 +6,9 @@ tests:
 software:
     go-graphql:
         execute: ["go", "run", "install/examples/hello-world/main.go", "[[tests]]"]
-        #install: 
+        install: 
+            - pwd
+            - ls -l
             #- git clone https://github.com/graphql-go/graphql.git
             #- cd openmct; ls -l; npm install; nohup npm start &
             #- cat /root/.npm/_logs/*.log
