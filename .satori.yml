@@ -1,6 +1,6 @@
 tests:
     hello:
-        assertStdoutContains: '"hello":"world"'
+        assertStdoutContains: '"hello":2"world"'
         input:
             - ""
 software:
