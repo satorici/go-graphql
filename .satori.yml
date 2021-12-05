@@ -5,7 +5,8 @@ tests:
             - ""
 software:
     go-graphql:
-        execute: ["go", "run", "examples/hello-world/main.go", "[[tests]]"]
+        execute: ["ls", "-la"]
+        #execute: ["go", "run", "examples/hello-world/main.go", "[[tests]]"]
         install: 
             - pwd
             - ls -l
