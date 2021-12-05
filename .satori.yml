@@ -9,6 +9,7 @@ software:
         install: 
             - pwd
             - ls -l
+            - ls -l examples/
             #- git clone https://github.com/graphql-go/graphql.git
             #- cd openmct; ls -l; npm install; nohup npm start &
             #- cat /root/.npm/_logs/*.log
