@@ -6,3 +6,5 @@ tests:
 software:
     go-graphql:
         execute: ["go", "run", "examples/hello-world/main.go", "[[tests]]"]
+        install:
+            - apt install -y go
