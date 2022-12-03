@@ -3,6 +3,7 @@ settings:
 
 install:
   assertReturnCode: 0
+  go:
   - [ apt install -y golang-go ]
        
 go-graphql:
