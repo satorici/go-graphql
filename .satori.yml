@@ -1,10 +1,12 @@
-tests:
-    hello:
-        assertStdoutContains: '"hello":"world"'
-        input:
-            - ""
-software:
-    go-graphql:
-        execute: ["go", "run", "examples/hello-world/main.go", "[[tests]]"]
-        install:
-            - apt install -y golang-go
+settings:
+  log: slack
+
+install:
+  assertReturnCode: 0
+  - [ apt install -y golang-go ]
+       
+go-graphql:
+  assertReturnCode: 0
+  assertStdoutContains: '"hello":"world"'
+  hello-world: 
+  - [ go run examples/hello-world/main.go ]
